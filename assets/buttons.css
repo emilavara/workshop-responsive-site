@@ -1,0 +1,48 @@
+button {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+    padding: 1rem 1.25rem;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.1s ease;
+
+    &:hover {
+        background-color: white;
+        color: #4a154b;
+    }
+
+    &.white {
+        background-color: white;
+        color: #4a154b;
+
+        &:hover {
+            background-color: #611f69;
+            color: white;
+            border: 2px solid #611f69;
+        }
+    }
+
+    &.purple {
+        background-color: #611f69;
+        color: white;
+
+        &:hover {
+            background-color: #4a154b;
+        }
+    }
+
+    &.purple-outline {
+        border: 2px solid #4a154b;
+        color: #4a154b;
+
+        &:hover {
+            border: #611f69 2px solid;
+            color: white;
+            background-color: #611f69;
+        }
+    }
+}

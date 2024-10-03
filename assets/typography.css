@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+h1 {
+    margin: 0;
+    color: white;
+    font-size: clamp(calc(2 * 1rem), calc((2 * 1rem) + ((3.125 - 2) * (100vw - (25 * 1rem)) / (64 - 25))), calc(3.125 * 1rem))
+}
+
+.heading {
+    &::before {
+        transition: content 0.2s ease;
+        content: "👋";
+        animation: emojiAnimation 2s ease infinite;
+        margin-right: 1rem;
+    }
+}
+
+@keyframes emojiAnimation {
+    0% {
+        content: "👋🏻"
+    }
+
+    25% {
+        content: "👋🏼"
+    }
+
+    50% {
+        content: "👋🏾"
+    }
+
+    85% {
+        content: "👋🏿"
+    }
+}
